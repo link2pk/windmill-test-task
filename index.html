@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket to the windmill family</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header>
+        <form data-icon="s" class="search-form">
+            <input type="search" name="search" placeholder="Find Your Ticket" class=" search-input" tabindex="1">
+            <button type="submit" data-icon="s" class="search-btn"></button>
+        </form>
+    </header>
+    <input type="radio" name="content_dir" id="ltr-rb" tabindex="3">
+    <input type="radio" name="content_dir" id="rtl-rb" tabindex="3">
+    <main class="main-content">
+        <input type="checkbox" name="" id="sidebar" class="sidebar-checkbox" tabindex="2">
+        <input type="checkbox" name="" id="train-cb">
+        <section class="boarding-pass">
+            <header class="main-header">
+                <h2>Ticket to <br>
+                    the windmill family</h2>
+            </header>
+            <section class="info-section">
+                <div class="train-bg">
+                    <div class="train">
+                    </div>
+                </div>
+
+                <header>
+                    <h1 class="ticket-heading">Test Task - Windmill</h1>
+                </header>
+
+                <section class="traveller-info">
+                    <h4>Person Name</h4>
+                    <p>Boarding pass №323</p>
+                </section>
+
+                <dl class="traveller-dl">
+                    <div data-icon="c">
+                        <dt>Date</dt>
+                        <dd>6 Dec</dd>
+                    </div>
+                    <div data-icon="t">
+                        <dt>Boarding</dt>
+                        <dd>16:45</dd>
+                    </div>
+                    <div data-icon="b">
+                        <dt>Class</dt>
+                        <dd>Economy</dd>
+                    </div>
+                    <div data-icon="e">
+                        <dt>Seat</dt>
+                        <dd>23</dd>
+                    </div>
+                    <label for="sidebar" class="sidebar-btn" data-show="Show Sidebar" data-hide="Hide Sidebar"
+                        role="button"></label>
+                </dl>
+            </section>
+        </section>
+
+        <section class="boarding-pass-small">
+            <section class="traveller-info">
+                <h4>Person Name</h4>
+                <p>Boarding pass №323</p>
+            </section>
+            <dl>
+                <div data-icon="r">
+                    <dt>From</dt>
+                    <dd>Test</dd>
+                </div>
+                <div data-icon="o">
+                    <dt>To</dt>
+                    <dd>Windmill</dd>
+                </div>
+
+            </dl>
+            <label for="train-cb" data-icon="p" class="animation-btn" role="button">
+                <span data-play="Play animation" data-pause="Stop Animation"></span>
+            </label>
+            <div>
+                <label for="ltr-rb" class="ltr-btn" role="button">Change direction to
+                    <br>
+                    LTR</label>
+                <label for="rtl-rb" class="rtl-btn" role="button">Change direction to
+                    <br>
+                    RTL</label>
+
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
