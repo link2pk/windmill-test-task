@@ -14,88 +14,92 @@
 
 <body>
     <header>
-        <form data-icon="s" class="search-form">
-            <input type="search" name="search" placeholder="Find Your Ticket" class=" search-input" tabindex="1">
-            <button type="submit" data-icon="s" class="search-btn"></button>
+        <form data-icon="s" class="ticket-search">
+            <input type="search" name="search" placeholder="Find Your Ticket" class=" ticket-search__input"
+                tabindex="1">
+            <button type="submit" data-icon="s" class="ticket-search__btn"></button>
         </form>
     </header>
-    <input type="radio" name="content_dir" id="ltr-rb" tabindex="3">
-    <input type="radio" name="content_dir" id="rtl-rb" tabindex="3">
-    <main class="main-content">
-        <input type="checkbox" name="" id="sidebar" class="sidebar-checkbox" tabindex="2">
-        <input type="checkbox" name="" id="train-cb">
-        <section class="boarding-pass">
-            <header class="main-header">
-                <h2>Ticket to <br>
+    <input type="radio" name="content_dir" id="ltr-rb" tabindex="3"
+        class="ticket__direction-radio-btn ticket__direction-radio-btn--ltr">
+    <input type="radio" name="content_dir" id="rtl-rb" tabindex="3"
+        class="ticket__direction-radio-btn ticket__direction-radio-btn--rtl">
+    <main class="ticket">
+        <input type="checkbox" name="" id="sidebar" class="ticket__checkbox--hidden ticket__sidebar-checkbox"
+            tabindex="2">
+        <input type="checkbox" name="" id="train-cb" class="ticket__checkbox--hidden ticket__checkbox-train">
+        <section class="ticket__content">
+            <header class="ticket__header">
+                <h2 class="ticket__title">Ticket to <br class="ticket__title--break">
                     the windmill family</h2>
             </header>
-            <section class="info-section">
-                <div class="train-bg">
-                    <div class="train">
+            <section class="ticket__body">
+                <div class="ticket__train-wrapper">
+                    <div class="ticket__train">
                     </div>
                 </div>
 
-                <header>
-                    <h1 class="ticket-heading">Test Task - Windmill</h1>
+                <header class="ticket__body-header">
+                    <h1 class="ticket__body-title">Test Task - Windmill</h1>
                 </header>
 
-                <section class="traveller-info">
-                    <h4>Person Name</h4>
+                <section class="ticket__traveller">
+                    <h4 class="ticket__traveller-name">Person Name</h4>
                     <p>Boarding pass №323</p>
                 </section>
 
-                <dl class="traveller-dl">
-                    <div data-icon="c">
-                        <dt>Date</dt>
-                        <dd>6 Dec</dd>
+                <dl class="ticket__traveller-info ticket__content-traveller-info">
+                    <div data-icon="c" class="ticket__traveller-item">
+                        <dt class="ticket__traveller-label">Date</dt>
+                        <dd class="ticket__traveller-desc">6 Dec</dd>
                     </div>
-                    <div data-icon="t">
-                        <dt>Boarding</dt>
-                        <dd>16:45</dd>
+                    <div data-icon="t" class="ticket__traveller-item">
+                        <dt class="ticket__traveller-label">Boarding</dt>
+                        <dd class="ticket__traveller-desc">16:45</dd>
                     </div>
-                    <div data-icon="b">
-                        <dt>Class</dt>
-                        <dd>Economy</dd>
+                    <div data-icon="b" class="ticket__traveller-item">
+                        <dt class="ticket__traveller-label">Class</dt>
+                        <dd class="ticket__traveller-desc">Economy</dd>
                     </div>
-                    <div data-icon="e">
-                        <dt>Seat</dt>
-                        <dd>23</dd>
+                    <div data-icon="e" class="ticket__traveller-item">
+                        <dt class="ticket__traveller-label">Seat</dt>
+                        <dd class="ticket__traveller-desc">23</dd>
                     </div>
-                    <label for="sidebar" class="sidebar-btn" data-show="Show Sidebar" data-hide="Hide Sidebar"
+                    <label for="sidebar" class="ticket__sidebar-btn" data-show="Show Sidebar" data-hide="Hide Sidebar"
                         role="button"></label>
                 </dl>
             </section>
         </section>
 
-        <section class="boarding-pass-small">
-            <section class="traveller-info">
-                <h4>Person Name</h4>
+        <aside class="ticket__sidebar">
+            <section class="ticket__traveller ticket__sidebar-traveller">
+                <h4 class="ticket__traveller-name">Person Name</h4>
                 <p>Boarding pass №323</p>
             </section>
-            <dl>
-                <div data-icon="r">
-                    <dt>From</dt>
-                    <dd>Test</dd>
+            <dl class="ticket__traveller-info">
+                <div data-icon="r" class="ticket__traveller-item">
+                    <dt class="ticket__traveller-label">From</dt>
+                    <dd class="ticket__traveller-desc">Test</dd>
                 </div>
-                <div data-icon="o">
-                    <dt>To</dt>
-                    <dd>Windmill</dd>
+                <div data-icon="o" class="ticket__traveller-item">
+                    <dt class="ticket__traveller-label">To</dt>
+                    <dd class="ticket__traveller-desc">Windmill</dd>
                 </div>
 
             </dl>
-            <label for="train-cb" data-icon="p" class="animation-btn" role="button">
-                <span data-play="Play animation" data-pause="Stop Animation"></span>
+            <label for="train-cb" data-icon="p" class="ticket__sidebar-animation-btn" role="button">
+                <span data-play="Play animation" data-pause="Stop animation"
+                    class="ticket__sidebar-animation-icon"></span>
             </label>
-            <div>
-                <label for="ltr-rb" class="ltr-btn" role="button">Change direction to
+            <div class="ticket__direction-wrapper">
+                <label for="ltr-rb" class="ticket__direction-ltr-label" role="button">Change direction to
                     <br>
                     LTR</label>
-                <label for="rtl-rb" class="rtl-btn" role="button">Change direction to
+                <label for="rtl-rb" class="ticket__direction-rtl-label" role="button">Change direction to
                     <br>
                     RTL</label>
-
             </div>
-        </section>
+        </aside>
     </main>
 </body>
 
