@@ -1,6 +1,6 @@
 @import "reset.css";
 
-@import "fonts.css";
+@import "icons.css";
 
 @import "keyframes.css";
 
@@ -23,15 +23,10 @@ body {
   background-color: var(--body-bg);
 }
 
-.ticket-search {
+.ticket__search {
   position: relative;
 
-  &::before {
-    position: absolute;
-    font-size: 24px;
-    line-height: 2;
-    left: 16px;
-  }
+
 
   @media (min-width: 768px) {
     max-width: 330px;
@@ -39,7 +34,18 @@ body {
   }
 }
 
-.ticket-search__input {
+.ticket__search-icon {
+  position: absolute;
+  left: 16px;
+  top: 12px;
+}
+
+.ticket__search-btn-icon {
+  position: relative;
+  top: 3px;
+}
+
+.ticket__search-input {
   font-weight: var(--fw-bold);
   width: 100%;
   height: 48px;
@@ -50,7 +56,7 @@ body {
     display: none;
   }
 
-  &:focus+.ticket-search__btn {
+  &:focus+.ticket__search-btn {
     display: block;
   }
 
@@ -60,7 +66,7 @@ body {
 }
 
 
-.ticket-search__btn {
+.ticket__search-btn {
   position: absolute;
   right: 16px;
   top: 8px;
@@ -161,11 +167,17 @@ body {
     }
 
     ~.ticket__sidebar {
-      .ticket__sidebar-animation-btn::before {
-        content: "u";
+      .ticket__sidebar-animation-btn {
+        .ticket__icon-play {
+          display: none;
+        }
+
+        .ticket__icon-pause {
+          display: inline-block;
+        }
       }
 
-      .ticket__sidebar-animation-icon::before {
+      .ticket__sidebar-animation-text::before {
         content: attr(data-pause);
       }
     }
@@ -313,6 +325,10 @@ body {
   padding: var(--section-spacing);
   font-weight: var(--fw-bold);
 
+  .ticket__icon {
+    margin-right: 8px;
+  }
+
   &:hover {
     cursor: pointer;
   }
@@ -352,7 +368,7 @@ body {
   }
 }
 
-.ticket__sidebar-animation-icon::before {
+.ticket__sidebar-animation-text::before {
   content: attr(data-play);
 }
 

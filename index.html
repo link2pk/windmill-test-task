@@ -14,10 +14,17 @@
 
 <body>
     <header>
-        <form data-icon="s" class="ticket-search">
-            <input type="search" name="search" placeholder="Find Your Ticket" class=" ticket-search__input"
+        <form class="ticket__search">
+            <svg class="icon ticket__search-icon">
+                <use href="img/icons.svg#icon-search"></use>
+            </svg>
+            <input type="search" name="search" placeholder="Find Your Ticket" class=" ticket__search-input"
                 tabindex="1">
-            <button type="submit" data-icon="s" class="ticket-search__btn"></button>
+            <button type="submit" class="ticket__search-btn">
+                <svg class="icon ticket__search-btn-icon">
+                    <use href="img/icons.svg#icon-search"></use>
+                </svg>
+            </button>
         </form>
     </header>
     <input type="radio" name="content_dir" id="ltr-rb" tabindex="3"
@@ -49,19 +56,31 @@
                 </section>
 
                 <dl class="ticket__traveller-info ticket__content-traveller-info">
-                    <div data-icon="c" class="ticket__traveller-item">
+                    <div class="ticket__traveller-item">
+                        <svg class="icon ticket__icon ticket__traveller-icon">
+                            <use href="img/icons.svg#icon-date"></use>
+                        </svg>
                         <dt class="ticket__traveller-label">Date</dt>
                         <dd class="ticket__traveller-desc">6 Dec</dd>
                     </div>
-                    <div data-icon="t" class="ticket__traveller-item">
+                    <div class="ticket__traveller-item">
+                        <svg class="icon ticket__icon ticket__traveller-icon">
+                            <use href="img/icons.svg#icon-time"></use>
+                        </svg>
                         <dt class="ticket__traveller-label">Boarding</dt>
                         <dd class="ticket__traveller-desc">16:45</dd>
                     </div>
-                    <div data-icon="b" class="ticket__traveller-item">
+                    <div class="ticket__traveller-item">
+                        <svg class="icon ticket__icon ticket__traveller-icon">
+                            <use href="img/icons.svg#icon-class"></use>
+                        </svg>
                         <dt class="ticket__traveller-label">Class</dt>
                         <dd class="ticket__traveller-desc">Economy</dd>
                     </div>
-                    <div data-icon="e" class="ticket__traveller-item">
+                    <div class="ticket__traveller-item">
+                        <svg class="icon ticket__icon ticket__traveller-icon">
+                            <use href="img/icons.svg#icon-seat"></use>
+                        </svg>
                         <dt class="ticket__traveller-label">Seat</dt>
                         <dd class="ticket__traveller-desc">23</dd>
                     </div>
@@ -77,19 +96,31 @@
                 <p>Boarding pass №323</p>
             </section>
             <dl class="ticket__traveller-info">
-                <div data-icon="r" class="ticket__traveller-item">
+                <div class="ticket__traveller-item">
+                    <svg class="icon ticket__icon ticket__traveller-icon">
+                        <use href="img/icons.svg#icon-train"></use>
+                    </svg>
                     <dt class="ticket__traveller-label">From</dt>
                     <dd class="ticket__traveller-desc">Test</dd>
                 </div>
                 <div data-icon="o" class="ticket__traveller-item">
+                    <svg class="icon ticket__icon ticket__traveller-icon">
+                        <use xlink:href="img/icons.svg#icon-location"></use>
+                    </svg>
                     <dt class="ticket__traveller-label">To</dt>
                     <dd class="ticket__traveller-desc">Windmill</dd>
                 </div>
 
             </dl>
-            <label for="train-cb" data-icon="p" class="ticket__sidebar-animation-btn" role="button">
+            <label for="train-cb" class="ticket__sidebar-animation-btn" role="button">
+                <svg class="icon ticket__icon ticket__icon-play">
+                    <use xlink:href="img/icons.svg#icon-play"></use>
+                </svg>
+                <svg class="icon ticket__icon ticket__icon-pause">
+                    <use xlink:href="img/icons.svg#icon-pause"></use>
+                </svg>
                 <span data-play="Play animation" data-pause="Stop animation"
-                    class="ticket__sidebar-animation-icon"></span>
+                    class="ticket__sidebar-animation-text"></span>
             </label>
             <div class="ticket__direction-wrapper">
                 <label for="ltr-rb" class="ticket__direction-ltr-label" role="button">Change direction to
